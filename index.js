@@ -21,24 +21,25 @@ inputs.forEach((input) => {
 // document.getElementById("testthis").innerHTML=localStorage.key(details.blog);
 
 function table() {
-  let table = `<table class="table">
-<thead>
+  let table = `<div class="table">
 
-</thead>
-<tbody>`;
+<div style= "display:flex; margin-left:2rem; flex-wrap: wrap;">`;
 let Data = localStorage.getItem("details");
 details = JSON.parse(Data);
 
   for (let i = 0; i < details.length; i++){
-      table = table + `<tr>
+      table = table + `
+    <div style= " margin-left:2rem; margin-top:3rem">
+    ${details[i].image} <br>
   
-    <td style="font-size:30px; font-weight:700; text-align:center; width:150px">${details[i].blog}</td>
-    <td style="font-size:20px; font-weight:300; text-align:center; padding-left:5rem;">${details[i].content}</td>
-    <td style="padding-left:2rem;">${details[i].image}</td>
-  </tr> `;
+     <p>${details[i].blog} <p> <br>
+     
+    <p>${details[i].content} </p>
+   </div>
+   `;
   };
-  table = table+`</tbody>
-  </table>`;
+  table = table+`</div>
+  </div>`;
   document.getElementById("b").innerHTML = table;
 };
 table()

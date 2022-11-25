@@ -58,7 +58,16 @@ body {
 	cursor: pointer;
 	margin: 12px 0;
 }
-button a{
+a{
     color: white;
     text-decoration: none;
+}
+
+.edit{
+	border: 2px solid #061649;
+    background-color: #061649;
+	font-size: 30px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px  #061649 ;
+	
 }
