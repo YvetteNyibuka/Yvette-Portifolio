@@ -19,18 +19,19 @@
 			<div class="textbox">
 				<i class="fa fa-user" aria-hidden="true"></i>
 				<input type="text" placeholder="Username"
-						name="username" value="">
+						name="username" value="" id="username">
 			</div>
 
 			<div class="textbox">
 				<i class="fa fa-lock" aria-hidden="true"></i>
 				<input type="password" placeholder="Password"
-						name="password" value="">
+						name="password" value="" id="pwd">
 			</div>
 <br>
-		<a href="admin.html" class="edit"> Sign In</a> 	
+		<input type="button" id="btn" value="Sign In" class="sub" onclick="getInfo()">	
 		</div>
 	</form>
+	<script src="login.js"></script>
 </body>
 
 </html>

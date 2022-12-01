@@ -109,3 +109,38 @@ zx
 #form{
   margin: 2% 30%;
 }
+
+.test{
+  height: 100%;
+  width: 100%;
+  background-color: wheat;
+}
+.do{
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+}
+
+.header h1{
+  margin-left: 40%;
+  margin-top: 2rem;
+}
+
+.blogs{
+  height: 190%;
+  width: 100%;
+  max-height: fit-content;
+  background-color: white;
+}
+
+.tab{
+margin-left: 15rem;
+height: 10%;
+width: 80%;
+border: 2px solid black;
+
+}
+
+.info{
+  margin-left: 9rem;
+}

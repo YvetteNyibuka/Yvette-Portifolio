@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <!-- <link rel="stylesheet" href="contact.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  </head>
-    <body>
+    <body >
      <div class="div1">
         <div class="d1">
             <nav>
-                <label  class="logo">HIREME</label> 
+                <label  class="logo"> <a href="#contact">HIREME</a> </label> 
                 <ul>
                   <li><a class="active"  href="#home">Home</a></li>
                   <li><a class="active"  href="#abouts">ABOUT</a></li>
@@ -59,7 +58,6 @@
 
 
 <section id="abouts">
-  <!-- <div class="t" style="height:123.5%;"> -->
     <div class="check">
       <div class="check-about">
       
@@ -192,29 +190,23 @@
 
       <div class="contact-form">
 
-        <form action="index.html" autocomplete="off">
-          <h3 class="title">Contact us</h3>
+        <form action="" autocomplete="off" name='registration' onSubmit="return formValidation();" class="contact-form">
+          <h3 class="title">Contact Me</h3>
           <div class="input-container">
-            <input type="text" name="name" class="input" />
-            <label for="">Username</label>
-            <span>Username</span>
+            <input type="text" name="name" id="name" class="input" placeholder="User name"/>
+            
           </div>
           <div class="input-container">
-            <input type="email" name="email" class="input" />
-            <label for="">Email</label>
-            <span>Email</span>
+            <input type="email" name="email" id="email-id" class="input" placeholder="Email"/>
+          
           </div>
           <div class="input-container">
-            <input type="tel" name="phone" class="input" />
-            <label for="">Phone</label>
-            <span>Phone</span>
+            <input type="tel" name="phone" id="phone" class="input" placeholder="Telephone number"/>
           </div>
           <div class="input-container textarea">
-            <textarea name="message" class="input"></textarea>
-            <label for="">Message</label>
-            <span>Message</span>
+            <textarea name="message" id="message" class="input" placeholder="Message"></textarea>
           </div>
-          <input type="submit" value="Send" class="btn" />
+          <input type="submit" name="submit" value="Send" class="btn"/>
         </form>
       </div>
     </div>

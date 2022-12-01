@@ -11,7 +11,8 @@ var form = `<div>
 
   <div class="form-group mt-3">
     <label for="content">content</label>
-    <textarea  class="form-control" id="content" placeholder="blog content"></textarea>
+    <textarea rows="4" cols="50"
+     class="form-control" id="content" placeholder="blog content"></textarea>
   </div>
   <button type="submit" class="btn btn-primary mt-3" onclick="save()">Save</button>
 </div>`;
@@ -29,6 +30,7 @@ function table() {
     </tr>
   </thead>
   <tbody>`;
+  
     for (let i = 0; i < details.length; i++){
         table = table + `<tr>
       <td>${i + 1}</td>
@@ -110,7 +112,7 @@ function edit(index) {
   <button type="submit" class="btn btn-primary mt-3" onclick="update(${index})">Update</button>
 </div>`;
     document.getElementById("form").innerHTML = editForm;
-    // console.log('edit work');
+    
 };
 function update(index) {
     let newBlog = document.getElementById('newblog');
@@ -125,9 +127,37 @@ function update(index) {
     setData();
     table();
     document.getElementById("form").innerHTML = form;
-// console.log('update work')
-// console.log(details)
+
 }
 
 
 
+
+
+
+// let querry = `<table class="tab">
+// <thead>
+//   <tr>
+//     <th clsaa="col-1">NO</th>
+//     <th clsaa="col-2">Names</th>
+//     <th clsaa="col-3">Email</th>
+//     <th clsaa="col-4">Phone</th>
+//     <th clsaa="col-5">Message</th>
+//   </tr>
+// </thead>
+// <tbody>`
+
+// for (let i = 0; i < querry.length; i++){
+//   querry = querry + `<tr>
+//       <td>${i + 1}</td>
+//       <td>${querry[i].name}</td>
+//       <td>${querry[i].email}</td>
+//       <td>${querry[i].phone}</td>
+//       <td>${querry[i].message}</td>
+//     </tr> `;
+// }
+// querry = querry+`</tbody>
+// </table>`;
+// document.getElementById("test").innerHTML = querry;
+
+// querry = [];

@@ -1,4 +1,4 @@
- *{
+*{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -20,6 +20,7 @@ label.logo{
  .d1{
 display: fixed;
 background-color: #59020e;
+
  }
 nav ul{
     float: right;
